@@ -1,0 +1,11 @@
+name: mybinder-rdkit
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - jupyter
+  - rdkit
+  - deepchem=2.7.2
+  - transformers
+  - selfies
+  - pytorch
