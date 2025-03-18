@@ -4,7 +4,7 @@ FROM jupyter/scipy-notebook:latest
 RUN conda install -c conda-forge rdkit
 
 # 安装 DeepChem（无 GPU 版本）
-RUN conda install -c conda-forge deepchem=2.7.2 -y
+RUN pip install --pre deepchem
 
 # 安装 PyTorch（无 GPU 版本）
 RUN conda install -c pytorch pytorch cpuonly -y
